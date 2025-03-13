@@ -40,12 +40,10 @@ Assuming your custom plugin configurations are hosted at `https://github.com/Cel
 # Navigate to the LazyVim plugins directory
 cd ~/.config/nvim/lua/plugins/
 
-# Add your GitHub repository as a remote
-git remote add custom-plugins https://github.com/CelestialIce/lazyvim.git
 
-# Fetch and merge your custom plugins
-git fetch custom-plugins
-git merge custom-plugins/main
+git clone https://github.com/CelestialIce/lazyvim.git
+cp lazyvim/* .
+
 ```
 
 Ensure that your custom plugin configurations are structured correctly within the `lua/plugins/` directory. Each plugin configuration should be in its own Lua file, following the LazyVim conventions.
