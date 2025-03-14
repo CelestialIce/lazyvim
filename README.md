@@ -43,7 +43,7 @@ cd ~/.config/nvim/lua/plugins/
 
 git clone https://github.com/CelestialIce/lazyvim.git
 cp lazyvim/* .
-
+rm -rf lazyvim
 ```
 
 Ensure that your custom plugin configurations are structured correctly within the `lua/plugins/` directory. Each plugin configuration should be in its own Lua file, following the LazyVim conventions.
